@@ -1,0 +1,15 @@
+﻿@model AspNetMvcCebuBootcamp.Controllers.PersonForm
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+
+<p>Firstname: @Model.Fname</p>
+<p>Middle initial: @Model.Mname</p>
+<p>Last name: @Model.Lname</p>
+
+
+<br /><br /><br />
+@Html.ActionLink("Back to Person Form", "Index", null, new { @class="btn btn-primary" })
